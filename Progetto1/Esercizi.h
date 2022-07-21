@@ -82,4 +82,26 @@ void pariDispari(int a[],int n,int pari[],int dispari[],int *j, int *k){
         }
     }
 }
+
+int vettoreSpeculare(int s[]){
+    int i;
+    int n=10;
+    int j=9;
+    int spec=0;
+    for(i=0;i<10;i++){
+        printf("\nInserire il valore in pos. %d: ",i);
+        scanf("%d",&s[i]);
+    }
+    i=0;
+    while(i!=n/2){
+        if(s[i]==s[j]){
+            spec=1;
+            j--;
+            i++;
+        }
+        else{
+            return 0;
+        }
+    }
+}
 #endif // ESERCIZI_H_INCLUDED
