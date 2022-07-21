@@ -104,4 +104,37 @@ int vettoreSpeculare(int s[]){
         }
     }
 }
+
+void ordinaVet(int a[], int n){
+    int i;
+    int j;
+    int posMin;
+    int aus;
+
+    for(i=0;i<n-1;i++){
+        posMin=i;
+        for(j=i+1;j<n;j++){
+            if(a[posMin]>a[j]){
+                posMin=j;
+            }
+        }
+        if(posMin!=i){
+            aus=a[i];
+            a[i]=a[posMin];
+            a[posMin]=aus;
+        }
+    }
+}
+
+int cercaNumero(int a[],int n,int nCercare){
+    int i;
+    int cnt;
+    cnt=0;
+    for(i=0;i<n;i++){
+        if(a[i]==nCercare){
+            cnt++;
+        }
+    }
+    return cnt;
+}
 #endif // ESERCIZI_H_INCLUDED

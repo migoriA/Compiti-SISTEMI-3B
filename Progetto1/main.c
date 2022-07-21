@@ -15,6 +15,7 @@ int main()
     int somP,somN;
     int pari[MAX], dispari[MAX];
     int speculare[10];
+    int num;
 
     int j,k;
     do{
@@ -58,8 +59,13 @@ int main()
                 }
                 break;
             case 8:
+                ordinaVet(a,lung);
+                stampaVet(a,lung);
                 break;
             case 9:
+                printf("Inserire un numero: ");
+                scanf("%d",&num);
+                printf("Il numero e' contenuto %d volte!",cercaNumero(a,lung,num));
                 break;
             case 10:
                 break;
@@ -88,9 +94,9 @@ int menu(){
     printf("\n5. Calcolo della somma degli elementi positivi e della somma degli elementi negativi del vettore A");
     printf("\n6. Creare i vettori PARI e DISPARI formati rispettivamente dagli elementipari e dispari presenti in A");
     printf("\n7. Verificare se un vettore di 10 numeri interi, preso in input all’interno della funzione, è speculare");
-    /*printf("\n8. Ordinare il vettore A passato come parametro e visualizzarlo nel main.");
+    printf("\n8. Ordinare il vettore A passato come parametro e visualizzarlo nel main.");
     printf("\n9. Cercare nel vettore A un numero preso in input nel main e passato come parametro (visualizzare nel main quante volte è contenuto nel vettore)");
-    printf("\n10. Contare quanti valori del vettore A, presi in valore assoluto, sono primi (La funzione deve eseguire il conteggio su un vettore qualsiasi e restituisce quanti numeri primi sono contenuti)");*/
+    /*printf("\n10. Contare quanti valori del vettore A, presi in valore assoluto, sono primi (La funzione deve eseguire il conteggio su un vettore qualsiasi e restituisce quanti numeri primi sono contenuti)");*/
 
     printf("\nInserire un'opzione: ");
     scanf("%d",&sc);
