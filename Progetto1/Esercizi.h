@@ -137,4 +137,28 @@ int cercaNumero(int a[],int n,int nCercare){
     }
     return cnt;
 }
+
+int numeriPrimi(int a[], int n){
+    int cnt=0;
+    int i;
+    int num=0;
+    int div=1;
+    int l=0;
+
+    for(i=0;i<n;i++){
+        num=abs(a[i]);
+        cnt=0;
+        div=1;
+        while(cnt<3 && div<=num/2){
+            if(num%div==0){
+                cnt++;
+            }
+            div++;
+        }
+        if(cnt==1){
+            l++;
+        }
+    }
+    return l;
+}
 #endif // ESERCIZI_H_INCLUDED

@@ -17,7 +17,7 @@ int main()
     int speculare[10];
     int num;
 
-    int j,k;
+    int j,k,l;
     do{
         scelta=menu();
         fflush(stdin);
@@ -68,6 +68,8 @@ int main()
                 printf("Il numero e' contenuto %d volte!",cercaNumero(a,lung,num));
                 break;
             case 10:
+                l=numeriPrimi(a, lung);
+                printf("Ci sono %d numeri primi",l);
                 break;
             case 0:
                 break;
@@ -95,8 +97,8 @@ int menu(){
     printf("\n6. Creare i vettori PARI e DISPARI formati rispettivamente dagli elementipari e dispari presenti in A");
     printf("\n7. Verificare se un vettore di 10 numeri interi, preso in input all’interno della funzione, è speculare");
     printf("\n8. Ordinare il vettore A passato come parametro e visualizzarlo nel main.");
-    printf("\n9. Cercare nel vettore A un numero preso in input nel main e passato come parametro (visualizzare nel main quante volte è contenuto nel vettore)");
-    /*printf("\n10. Contare quanti valori del vettore A, presi in valore assoluto, sono primi (La funzione deve eseguire il conteggio su un vettore qualsiasi e restituisce quanti numeri primi sono contenuti)");*/
+    printf("\n9. Cercare nel vettore A un numero preso in input nel main e passato come parametro");
+    printf("\n10. Contare quanti valori del vettore A, presi in valore assoluto, sono primi");
 
     printf("\nInserire un'opzione: ");
     scanf("%d",&sc);
