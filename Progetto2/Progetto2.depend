@@ -1,9 +1,9 @@
 # depslib dependency file v1.0
-1659362289 source:c:\users\andrea\desktop\compiti sistemi\progetto2\main.c
+1659363694 source:c:\users\andrea\desktop\compiti sistemi\progetto2\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"Esercizi.h"
 
-1659362100 c:\users\andrea\desktop\compiti sistemi\progetto2\esercizi.h
+1659363789 c:\users\andrea\desktop\compiti sistemi\progetto2\esercizi.h
 

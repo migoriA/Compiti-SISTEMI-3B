@@ -8,6 +8,7 @@
 int main()
 {
     int scelta;
+    int c,v;
     char str[MAX];
 
     do{
@@ -18,6 +19,10 @@ int main()
             case 1:
                 printf("Inserire una stringa: ");
                 gets(str);
+                break;
+            case 2:
+                contaConsonantiVocali(str, &c, &v);
+                printf("Le consonanti sono: %d\nLe vocali sono: %d",c,v);
                 break;
             case 0:
                 break;
@@ -40,9 +45,10 @@ int menu(){
     int sc=0;
     printf("0. Esci\n");
     printf("1. Leggere una stringa str\n");
+    printf("2. Contare il numero di consonanti e di vocali presenti in str\n");
     printf("Scelta -> ");
     scanf("%d",&sc);
-    /*2 Contare il numero di consonanti e di vocali presenti in str\n
+    /*
     3 Contare quante volte ogni lettera dell’alfabeto compare in str senza distinguere tra maiuscole e minuscole (str deve essere passata come parametro e la visualizzazione delle volte che le lettere compaiono deve essere effettuata all’interno della funzione)
     4 Raddoppiare le occorrenze delle vocali in str modificando str Es.: ciao → ciiaaoo (str passata come parametro deve poi essere visualizzata nel main)
     5 Cancellare le vocali presenti in una stringa modificando str Es.: ciao → c(str passata come parametro deve poi essere visualizzata nel main)
