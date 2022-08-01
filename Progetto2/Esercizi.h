@@ -1,0 +1,6 @@
+#ifndef ESERCIZI_H_INCLUDED
+#define ESERCIZI_H_INCLUDED
+
+
+
+#endif // ESERCIZI_H_INCLUDED
