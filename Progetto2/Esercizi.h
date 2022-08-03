@@ -79,4 +79,17 @@ void raddoppiaVocali(char str[]){
     str2[j] = '\0';
     strcpy(str,str2);
 }
+
+void rimuoviVocali(char str[]){
+    int i=0,j=0;
+    char str2[MAX];
+
+    while(str[i] != '\0'){
+        if(!(str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u' || str[i] == 'A' || str[i] == 'E' || str[i] == 'I' || str[i] == 'O' || str[i] == 'U'))
+            str2[j++] = str[i];
+        i++;
+    }
+    str2[j] = '\0';
+    strcpy(str,str2);
+}
 #endif // ESERCIZI_H_INCLUDED
