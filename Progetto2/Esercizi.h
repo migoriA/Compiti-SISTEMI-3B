@@ -1,6 +1,8 @@
 #ifndef ESERCIZI_H_INCLUDED
 #define ESERCIZI_H_INCLUDED
 
+#define MAX 100
+
 void contaConsonantiVocali(char str[], int *c, int *v){
     int n=0;
     int pos;
@@ -65,4 +67,16 @@ void contaLettere(char str[]){
     }
 }
 
+void raddoppiaVocali(char str[]){
+    int i=0,j=0;
+    char str2[MAX];
+
+    while(str[i] != '\0'){
+        if(str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u' || str[i] == 'A' || str[i] == 'E' || str[i] == 'I' || str[i] == 'O' || str[i] == 'U')
+            str2[j++] = str[i];
+        str2[j++] = str[i++];
+    }
+    str2[j] = '\0';
+    strcpy(str,str2);
+}
 #endif // ESERCIZI_H_INCLUDED
