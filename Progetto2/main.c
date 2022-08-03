@@ -42,6 +42,10 @@ int main()
                 sostituireCarattereInInput(str,car);
                 printf("Frase modificata -> %s",str);
                 break;
+            case 7:
+                printf("Codice ASCII -> ");
+                stampaCodiceASCII(str);
+                break;
             case 0:
                 break;
             default:
@@ -68,10 +72,8 @@ int menu(){
     printf("4. Raddoppiare le occorrenze delle vocali in str modificando str Es.: ciao → ciiaaoo\n");
     printf("5. Cancellare le vocali presenti in una stringa modificando str Es.: ciao → c\n");
     printf("6. Sostituire in str le occorrenze di un carattere preso in input con il carattere ‘&'\n");
+    printf("7. Visualizzare il codice ASCII di tutti i caratteri contenuti in str\n");
     printf("Scelta -> ");
     scanf("%d",&sc);
-    /*
-
-    7 Visualizzare il codice ASCII di tutti i caratteri contenuti in str*/
     return sc;
 }

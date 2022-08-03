@@ -103,4 +103,13 @@ void sostituireCarattereInInput(char str[], char c){
         i++;
     }
 }
+
+void stampaCodiceASCII(char str[]){
+    int i=0;
+
+    while(str[i]!='\0'){
+        printf("%d ",str[i]);
+        i++;
+    }
+}
 #endif // ESERCIZI_H_INCLUDED
