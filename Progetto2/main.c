@@ -10,6 +10,7 @@ int main()
     int scelta;
     int c,v;
     char str[MAX];
+    char car=' ';
 
     do{
         scelta = menu();
@@ -33,6 +34,12 @@ int main()
                 break;
             case 5:
                 rimuoviVocali(str);
+                printf("Frase modificata -> %s",str);
+                break;
+            case 6:
+                printf("Inserire il carattere da sostituire: ");
+                scanf("%c",&car);
+                sostituireCarattereInInput(str,car);
                 printf("Frase modificata -> %s",str);
                 break;
             case 0:
@@ -60,10 +67,11 @@ int menu(){
     printf("3. Contare quante volte ogni lettera dell’alfabeto compare in str senza distinguere tra maiuscole e minuscole\n");
     printf("4. Raddoppiare le occorrenze delle vocali in str modificando str Es.: ciao → ciiaaoo\n");
     printf("5. Cancellare le vocali presenti in una stringa modificando str Es.: ciao → c\n");
+    printf("6. Sostituire in str le occorrenze di un carattere preso in input con il carattere ‘&'\n");
     printf("Scelta -> ");
     scanf("%d",&sc);
     /*
-    6 Sostituire in str le occorrenze di un carattere preso in input con il carattere ‘&’ Es: str: pippo carattere in input: p str: &i&&0 (str passata come parametro deve poi essere visualizzata nel main)
+
     7 Visualizzare il codice ASCII di tutti i caratteri contenuti in str*/
     return sc;
 }

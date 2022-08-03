@@ -92,4 +92,15 @@ void rimuoviVocali(char str[]){
     str2[j] = '\0';
     strcpy(str,str2);
 }
+
+void sostituireCarattereInInput(char str[], char c){
+    int i=0;
+
+    while(str[i]!='\0'){
+        if(str[i]==c){
+            str[i]='&';
+        }
+        i++;
+    }
+}
 #endif // ESERCIZI_H_INCLUDED
