@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1662630605 source:c:\users\andre\desktop\compiti-sistemi-3b\progetto3\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Esercizi.h"
+
+1662631682 c:\users\andre\desktop\compiti-sistemi-3b\progetto3\esercizi.h
+
