@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX 30
+#define MAX 40
 
 #include "Esercizio.h"
 
@@ -23,10 +23,7 @@ int main()
 
     //This function load the number in the folders
 
-    loadVet(cart1);
-    loadVet(cart2);
-    loadVet(cart3);
-    loadVet(cart4);
+    loadVet(cart1,cart2,cart3,cart4);
 
     printf("========\n");
     printf("CARTELLE\n");
